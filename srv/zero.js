@@ -69,7 +69,7 @@ var moment = require('moment-timezone')
 var { exec, spawn, execSync } = require('child_process')
 fakeimg = fs.readFileSync('./img/zero.jpg')
 fakethumb = fs.readFileSync('./img/thumbnail.jpg')
-faketeks = '©Created By LeonGanz'
+faketeks = '©Created By Niskata'
 blocked = []
 multi =false
 offline = false
@@ -264,7 +264,7 @@ var isButton = (type == 'buttonsResponseMessage') ? zer.message.buttonsResponseM
 		
 mess = {
 wait: 'Mohon Tunggu... Sedang Proses',
-success: 'Done...Jangam Lupa Subscribe LeonGanz',
+success: 'Done...Jangam Lupa Follow _xkurokochi',
 wrongFormat: 'Format salah, Silahkan Cek Lagi Di List Menu',
 error: {
 stick: 'Sticker Salah Mohon Coba Lagi',
@@ -309,8 +309,8 @@ orderMessage: {
 itemCount : 169,
 status: 1,
 surface : 1,
-message: `Subscribe LeonGanz`, 
-orderTitle: `Subscribe LeonGanz`,
+message: `Follow _xkurokochi`, 
+orderTitle: `Follow _xkurokochi`,
 thumbnail: fakethumb,
 sellerJid: '0@s.whatsapp.net' 
 }
@@ -506,14 +506,14 @@ switch (command) {
 case 'menu':
 case 'help':
 case 'p':
-                          res = await zero.prepareMessageFromContent(from,{
+                         res = await zero.prepareMessageFromContent(from,{
 "listMessage": {
 "title": '「 INFO USER 」',
 "description": `Nama : ${pushname}
 Nomer : @${sender.split('@')[0]}
 
 「 INFO BOT 」
-🎃Creator Bot : ©LeonGanz
+🎃Creator Bot : ©Niskata
 🌐 Prefix :  ⌜  ${prefix}  ⌟
 🍬 Name Bot : ${NameBot}
 ☕ Runtime : ${runtime(process.uptime())}
@@ -543,12 +543,12 @@ ${wit} WIT`,
            "title": "😐Group Menu😐",
            "rowId": `groupmenu`
            },
-	       {
-	       "title": "🤘Tools Menu🤘",
+	   {
+	   "title": "🤘Tools Menu🤘",
            "rowId": `toolsmenu`
            },
            {
-	       "title": "😊Storage Menu😊",
+	   "title": "😊Storage Menu😊",
            "rowId": `storagemenu`
            },
            {
@@ -564,24 +564,12 @@ ${wit} WIT`,
            "rowId": `makermenu`
            },
            {
-           "title": "🦊Script Bot🦊",
-           "rowId": `sc`
-           },
-           {
            "title": "All Menu",
            "rowId": `allmenu`
            },
            {
            "title": "😗Owner Bot😗",
            "rowId": `owner`
-           },
-	       {
-           "title": "😸Info Bot😸",
-           "rowId": `infobot`
-           },
-           {
-           "title": "😇Islam Menu😇",
-           "rowId": `islammenu`
            },
            {
            "title": "🌸Wibu menu🌸",
@@ -641,7 +629,7 @@ ${wit} WIT`,
                 { buttonId: 'owner', buttonText: { displayText: 'OWNER' }, type: 1 },
                 { buttonId: 's&k', buttonText: { displayText: 'S&K' }, type: 1 }
                  ]
-sendButLocation(from, menu, "©Created By LeonGanz", fakeimg, but, zer)
+sendButLocation(from, menu, "©Created By Niskata", fakeimg, but, zer)
 break
 case 'downloadmenu':       
 case '⬇️':
@@ -693,7 +681,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -732,7 +720,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -763,7 +751,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -816,7 +804,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -854,7 +842,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 ➤ ${prefix}toimg
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪ Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -887,7 +875,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 ➤ ${prefix}delimage [ _nama_ ]
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -925,7 +913,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 ➤ ${prefix}tospam  [ _reply audio/sticker/image|jumlah_ ]
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -993,7 +981,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 ➤ ${prefix}valorantbanner [ _teks_ ]
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -1089,7 +1077,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 ➤ ${prefix}ssweb [ _teks_ ]
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -1121,7 +1109,7 @@ menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
 ➤ ${prefix}asupanrika
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
+◪  Renge ~Bot@^3.0.0`, locationMessage: locatione,
                buttons: buttons,
                headerType: 6
 }
@@ -1145,7 +1133,7 @@ but = [
                 { buttonId: 'owner', buttonText: { displayText: 'OWNER' }, type: 1 },
                 { buttonId: 's&k', buttonText: { displayText: 'S&K' }, type: 1 }
                  ]
-sendButLocation(from, menu, "©Created By LeonGanz", fakeimg, but, zer)
+sendButLocation(from, menu, "©Created By Niskata", fakeimg, but, zer)
 break
 
 case 'allmenu':       
@@ -1153,7 +1141,7 @@ menu =` Nama : ${pushname}
 Nomer : @${sender.split('@')[0]}
 
 「 INFO BOT 」
-🎃Creator Bot : ©LeonGanz
+🎃Creator Bot : ©Niskata
 🌐 Prefix :  ⌜ #  ⌟
 🍬 Name Bot : ${NameBot}
 ☕ Runtime : ${runtime(process.uptime())}
@@ -1448,7 +1436,7 @@ ${wit} WIT`
 
 
 ◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`,
+◪  Renge ~Bot@^3.0.0`,
  locationMessage: locatione,
                buttons: buttons,
                headerType: 6
@@ -1479,7 +1467,7 @@ anu =`SILAHKAN PILIH SALAH SATU`
 punten = [{buttonId: 'welcome off', buttonText: {displayText: 'OFF'}, type: 1},{buttonId: 'welcome on', buttonText: {displayText: 'ON️'}, type: 1}]
 var btngrass = {
 contentText: `${anu}`,
-footerText: 'Created By LeonGanz',
+footerText: 'Created By Niskata',
 buttons: punten,
 headerType: 1
 }
@@ -1750,7 +1738,7 @@ case 'waifu':
 		      buttons = [{buttonId: `${command}`,buttonText:{displayText: `Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'OWNER'},type:1}]
               imageMsg = ( await zero.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Tetaplah Bahagia', imageMessage: imageMsg,
-              contentText:`YT LeonGanz`,buttons,headerType:4}
+              contentText:`IG _xkurokochi`,buttons,headerType:4}
               prep = await zero.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               zero.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
@@ -1763,7 +1751,7 @@ case 'waifu':
               buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=GhosBid2007`)
               buttons = [{buttonId: `${command}`,buttonText:{displayText: `⬡ NEXT`},type:1}]
               imageMsg = (await zero.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'妹Yui-Chan@^3.0.0', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Renge ~Bot@^3.0.0', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await zero.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               zero.relayWAMessage(prep)
@@ -1848,7 +1836,7 @@ reply(mess.error.stick)
 .on('end', function () {
 console.log('Finish')
 buffer = fs.readFileSync(ran)
-costum(buffer, sticker, Verived, `Jangan Lupa Subscribe LeonGanz`)
+costum(buffer, sticker, Verived, `Jangan Lupa follow _xniskata`)
 fs.unlinkSync(media)
 fs.unlinkSync(ran)
 })
@@ -1927,7 +1915,7 @@ let inilist = []
 for (let i of ownerNumber) {
 let vname = zero.contacts[i] != undefined ? zero.contacts[i].vname || zero.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'LEON',
+"displayName": 'Niskata',
 "vcard": 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
 + `FN:${NameOwner}\n`
@@ -1967,26 +1955,18 @@ reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaik
 break
 case 'youtube':
 teks =
-`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/c/LeonGanz`
+`GAK PUNYA CHANNEL YT :D`
 zero.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'instagram':
 teks =
-`Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://instagram.com/leonvx._`
+`Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://instagram.com/_xkurokochi`
 zero.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'tiktok':
 teks =
 `🗿😢Owner ga punya tik tod >:v`
 zero.sendMessage(from, teks, text, {quoted: ftrol})
-break
-case 'sourcecode':
-case 'script':
-case 'sc':
-teks = `[ 𝗜𝗡𝗙𝗢 𝗦𝗖𝗥𝗜𝗣𝗧 𝗕𝗢𝗧 ]
-𝐂𝐫𝐞𝐚𝐭𝐨𝐫 𝐒𝐜𝐫𝐢𝐩𝐭 : LeonGanz
-𝐋𝐢𝐧𝐤 𝐒𝐜𝐫𝐢𝐩𝐭 : https://youtube.com/c/LeonGanz`
-zero.sendMessage(from, teks, text, {quoted : zer})
 break
 case "runtime":
 case "test":
@@ -2296,44 +2276,6 @@ her = `*Hero Details ${body.slice(12)}*
 *Story* : ${res.background_story}`
 reply(her)
 break
-case 'infobot':
-case '😸':
-menu =` *${ucapanWaktu}*, *${pushname}* 👋🏻`
-
-               buttons =  [
-    {buttonId: `menu`, buttonText: {displayText: 'Back To Menu'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'Owner'}, type: 1},
-]
-               locatione = (await zero.prepareMessageFromContent(from, {"locationMessage": { "degreesLatitude": 0, "degreesLongitude": 0}}, {thumbnail:fs.readFileSync('./img/zero.jpg')})).message.locationMessage
-
-               buttonsMessage = {
-               contentText: `${menu}`,
-               footerText:  `┏━➤ *INFO BOT* 
-*┃┃* Creator Bot : LeonGanz
-*┃┃* Nama Owner : ${NameOwner}
-*┃┃* Nama Bot : ${NameBot}
-*┃┃* Prefix : Multi Prefix
-*┃┃* Total Pengguna : ${pendaftar.length}
-*┃┃* Runtime : ${runtime(process.uptime())}
-*┃┃* Speed : ${latensi.toFixed(4)} second
-*┃┃* Language : Javascript
-*┃┗━━━━━━━━*
-*┃◗ Thanks To Allah S.W.T*
-*┃◗ Thanks To Ortu*
-*┃◗ Thanks To LeonGanz*
-*┃◗ Thanks To Putri.Zizah*
-*┃◗ Thanks To All Subscriberku*
-*┗━━━━━━━ •*
-
-◪ Runtime : ${runtime(process.uptime())} 
-◪  妹Yui-Chan@^3.0.0`, locationMessage: locatione,
-               buttons: buttons,
-               headerType: 6
-}
-
-
-               prep = await zero.prepareMessageFromContent(from,{buttonsMessage},{quoted:{key:{fromMe:false,participant:`0@s.whatsapp.net`, ...(from ? {remoteJid :"6285878313791@g.us" }: {})},message:{"orderMessage":{"orderId":"6285878313791","thumbnail":``,"itemCount":281005,"status":"INQUIRY","surface":"CATALOG","message":` `,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo:{ forwardingScore:508, isForwarded:true, mentionedJid:[sender]}})
-              zero.relayWAMessage(prep)
-               break
 case 'googlesearch':
 case 'ggs':
 if (args.length < 1) return reply('Yang mau di cari apaan?')
@@ -2431,7 +2373,7 @@ ini_txt = `${get_result.title} - ${get_result.size}`
 ini_buffer = await getBuffer(get_result.thumbnail)
 await zero.sendMessage(from, ini_buffer, image, { quoted: ftrol, caption: ini_txt })
 get_audio = await getBuffer(get_result.link)
-await zero.sendMessage(from, get_audio, video, { mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz'})
+await zero.sendMessage(from, get_audio, video, { mimetype: 'video/mp4', filename: `${get_result.title}.mp4`, quoted: ftrol, caption: 'Nih Jangan Lupa Follow _xkurokochi'})
 break
 case 'ytmp3':
                     if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
@@ -2441,7 +2383,7 @@ case 'ytmp3':
                     caption = `â– Title    : *${get_result.title}*\n`
                     caption += `â– Size     : *${get_result.size}*`
                     ini_buffer = await getBuffer(get_result.thumbnail)
-                    await zero.sendMessage(from, ini_buffer, image, { quoted: ftrol, caption: 'Subs Channel LeonGanz'})
+                    await zero.sendMessage(from, ini_buffer, image, { quoted: ftrol, caption: 'Follow _xkurokochi'})
                     get_audio = await getBuffer(get_result.link)
                     await zero.sendMessage(from, get_audio, audio, { mimetype: 'audio/mp4', filename: `${get_result.title}.mp3`, quoted: ftrol })
                     break
@@ -2523,10 +2465,10 @@ reply(mess.wait)
 		for(let i of result.medias){
 			if(i.url.includes('mp4')){
 				let link = await getBuffer(i.url)
-                    zero.sendMessage(from,link,video,{thumbnail: Buffer.alloc(0), quoted: zer,caption: `Subs LeonGanz  ${i.type}`})
+                    zero.sendMessage(from,link,video,{thumbnail: Buffer.alloc(0), quoted: zer,caption: `Jangan lupa donasi  ${i.type}`})
                 } else {                	
                     let link = await getBuffer(i.url)
-                    zero.sendMessage(from,link,image,{thumbnail: Buffer.alloc(0), quoted: zer,caption: `Subs LeonGanz ${i.type}`})                
+                    zero.sendMessage(from,link,image,{thumbnail: Buffer.alloc(0), quoted: zer,caption: `Jangan lupa donasi {i.type}`})                
                  }
            }
                });
@@ -2542,7 +2484,7 @@ reply(mess.wait)
                         ini_type = image
                         if (x.includes(".mp4")) ini_type = video
                         ini_buffer = await getBuffer(x)
-                        await zero.sendMessage(from,link,image,{thumbnail: Buffer.alloc(0), quoted: zer,caption: `Subs LeonGanz`})
+                        await zero.sendMessage(from,link,image,{thumbnail: Buffer.alloc(0), quoted: zer,caption: `Follow _xkurokochi`})
                     }
                     break
                     case 'tiktokdl':
@@ -3476,7 +3418,6 @@ rules = `*「 PERATURAN BOT 」*
 5. DILARANG TELEFON OWNER
 6. DILARANG SPAM GROUP
 7. DILARANG SPAM ADMIN
-8. DILARANG BERKATA KASAR DI GC
 
 ⚠️JIKA KALIAN MELANGGAR.. AKAN DI BLOCK + BANNED!!`
 var ZeroYT7 = {
@@ -3487,7 +3428,7 @@ var ZeroYT7 = {
             forwardingScore: 8,
            quotedMessage: {
            imageMessage: {
-           caption: `©Created By LeonGanz`,
+           caption: `©Created By Niskata`,
            jpegThumbnail: fakethumb,
            mimetype: 'image/jpeg',
            }
@@ -3613,11 +3554,11 @@ case 'cutegravity':
 case 'realvintage':
 case 'codwarzone':
 case 'valorantbanner':
-if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh : ${prefix + command} LeonGanz`)
+if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh : ${prefix + command} Niskata`)
 bo = args.join(" ")
 reply(mess.wait)
 anu = await getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=GhosBid2007&text=${bo}`)
-zero.sendMessage(from, anu, image, {quoted: ftrol, caption: 'Done Jangan Lupa Subscribe LeonGanz' })
+zero.sendMessage(from, anu, image, {quoted: ftrol, caption: 'Done Jangan Lupa follow _xkurokochi' })
 break
 case 'hartatahta':
 case 'naruto':
@@ -3645,11 +3586,11 @@ case 'leavest':
 case 'thundertext':
 case 'tlight':
 case 'nulis':
-if (args.length == 0) return reply(`Teks Nya Mana\nContoh : ${prefix + command} LeonGanz`)
+if (args.length == 0) return reply(`Teks Nya Mana\nContoh : ${prefix + command} Niskata`)
 bo = args.join(" ")
 reply(mess.wait)
 res = await getBuffer(`https://api.zeks.me/api/${command}?apikey=${apikey4}&text=${bo}`)
-zero.sendMessage(from, res, image, {quoted: ftrol, caption: 'Done Jangan Lupa Subscribe LeonGanz' })
+zero.sendMessage(from, res, image, {quoted: ftrol, caption: 'Done Jangan Lupa Follow _xkurokochi' })
 break
 case 'wolflogo':
 case 'pubglogo':
@@ -3659,12 +3600,12 @@ case 'logoaveng':
 case 'phlogo':
 case 'marvellogo':
 case 'gtext':
-if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh : ${prefix + command} LeonGanz`)
+if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh : ${prefix + command} Niskata`)
 txt1 = args[0]
 txt2 = args[0]
 reply(mess.wait)
 wll = await getBuffer(`https://api.zeks.me/api/${command}?apikey=${apikey4}&text1=${txt1}&text2=${txt2}`)
-zero.sendMessage(from, wll, image, {quoted: ftrol, caption: 'Done Jangan Lupa Subscribe LeonGanz' })
+zero.sendMessage(from, wll, image, {quoted: ftrol, caption: 'Done Jangan Lupa Follow _xkurkochi' })
 break
 case 'blackpink':
 case 'neon':
@@ -3703,18 +3644,18 @@ case 'harrypotter':
 case 'foggywindow':
 case 'watercolor':
 case 'wonderfulgraffiti':
-if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh : ${prefix + command} LeonGanz`)
+if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh : ${prefix + command} Niskata`)
 bo = args.join(" ")
 reply(mess.wait)
 blck = await getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=GhosBid2007&text=${bo}`)
-zero.sendMessage(from, blck, image, {quoted: ftrol, caption: 'Done Jangan Lupa Subscribe LeonGanz' })
+zero.sendMessage(from, blck, image, {quoted: ftrol, caption: 'Done Jangan Lupa follow _xkurokochi' })
 break
 case 'ssweb':
 if (args.length == 0) return reply(`Teks Nya Mana ?\nContoh: ${prefix + command} Lexxy Gantenk`)
 ini_url = args.join(" ")
 reply(mess.wait)
 getBuffer(`https://api.lolhuman.xyz/api/ssweb?apikey=GhosBid2007&url=${ini_url}`).then((hasil) => {
-zero.sendMessage(from, hasil, image, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Subscribe LeonGanz`, quoted : ftrol})
+zero.sendMessage(from, hasil, image, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Follow _xkurokochi`, quoted : ftrol})
 })
 break
 // Islami //
@@ -3796,48 +3737,48 @@ case 'asupan':
 ini = await fetchJson(`https://api-bot.udin-sadboy.repl.co/api/asupan?apikey=miko`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.result)
-zero.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz'})
+zero.sendMessage(from, buffer, video, {quoted: ftrol, caption: 'Nih Jangan Lupa Follow _xkurokochi'})
 break
 case 'asupancecan':
 ini = await fetchJson(`https://api-bot.udin-sadboy.repl.co/api/asupan/cecan?apikey=miko`)
 reply(mess.wait)
 buffer = await getBuffer(ini.result.url)
-zero.sendMessage(from, buffer, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Subscribe LeonGanz'})
+zero.sendMessage(from, buffer, image, {quoted: ftrol, caption: 'Nih Jangan Lupa Follow _xkurokochi'})
 break
 case 'asupanhijaber':
 reply(mess.wait)
 getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/v2/ukhty?apikey=Alphabot`).then((hasil) => {
-zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Subscribe LeonGanz`, quoted : ftrol})
+zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Follow _xkurokochi`, quoted : ftrol})
 })
 break
 case 'asupansantuy':
 reply(mess.wait)
 getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/v2/santuy?apikey=Alphabot`).then((hasil) => {
-zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Subscribe LeonGanz`, quoted : ftrol})
+zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Follow _xkurokochi`, quoted : ftrol})
 })
 break
 case 'asupanukhti':
 reply(mess.wait)
 getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/v2/ukhty?apikey=Alphabot`).then((hasil) => {
-zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Subscribe LeonGanz`, quoted : ftrol})
+zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Follow _xkurokochi`, quoted : ftrol})
 })
 break
 case 'asupanbocil':
 reply(mess.wait)
 getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/v2/bocil?apikey=Alphabot`).then((hasil) => {
-zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Subscribe LeonGanz`, quoted : ftrol})
+zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Follow _xkurokochi`, quoted : ftrol})
 })
 break
 case 'asupanghea':
 reply(mess.wait)
 getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/v2/geayubi?apikey=Alphabot`).then((hasil) => {
-zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Subscribe LeonGanz`, quoted : ftrol})
+zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Follow _xkurokochi`, quoted : ftrol})
 })
 break
 case 'asupanrika':
 reply(mess.wait)
 getBuffer(`https://api-alphabot.herokuapp.com/api/asupan/v2/rikagusriani?apikey=Alphabot`).then((hasil) => {
-zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Subscribe LeonGanz`, quoted : ftrol})
+zero.sendMessage(from, hasil, video, { thumbnail: Buffer.alloc(0), caption: `Done Jangan Lupa Follow _xkurokochi`, quoted : ftrol})
 })
 break
 case 'vietnam':
